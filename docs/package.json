@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
-    "start": "next start",
+    "dev": "node api.js && next dev --turbo",
+    "start": "node api.js && next start",
     "postinstall": "fumadocs-mdx",
     "postbuild": "next-sitemap",
     "typecheck": "tsc --noEmit",
